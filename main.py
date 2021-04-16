@@ -137,3 +137,12 @@ print("Chłopców:", df[((df.Plec == "M"))].sum()[2])
 
 print(df.groupby(['Rok', 'Plec']).agg({'Liczba':['sum']}))
 
+chlopcy = df[((df.Plec == "M"))]
+chlopcyGroupBy = chlopcy.groupby(['Imie', 'Plec']).agg({'Liczba':['sum']})
+print(chlopcyGroupBy.sort_values(by=chlopcyGroupBy.columns[0], ascending=False))
+
+
+
+dziewczynki = df[((df.Plec == "K"))]
+dziewczynkiGroupBy = dziewczynki.groupby(['Imie', 'Plec']).agg({'Liczba':['sum']})
+print(dziewczynkiGroupBy.sort_values(by=dziewczynkiGroupBy.columns[0], ascending=False))
