@@ -118,6 +118,39 @@ for i in range(0, 3):
 
 print(a)
 
+#Zad9
+ a = np.array([[3, 7, 5], [6, 1, 9], [2, 7, 8]])
+ for b in a.flat:
+     print(b)
+     print("")
+
+#Zad10
+ macierz = np.arange(0,81,1).reshape(9,9)
+ print(macierz)
+
+ macierz_1 = macierz.reshape(3,27)
+ print(macierz_1)
+ macierz_2 = macierz.reshape(27,3)
+ print(macierz_2)
+ macierz_3 = macierz.reshape(81,1)
+ print(macierz_3)
+ macierz_4 = macierz.ravel()
+ print(macierz_4)
+
+#Zad11
+ a = np.array([3, 7, 5, 6, 1, 9, 2, 7, 8, 6, 3, 6])
+ print(a)
+ macierz_1 = a.reshape(3, 4)
+ print(macierz_1)
+ print(macierz_1.ravel())
+ macierz_2 = macierz_1.reshape(4,3)
+ print(macierz_2)
+ print(macierz_2.ravel())
+ macierz_3 = macierz_1.reshape(2,6)
+ print(macierz_3)
+ print(macierz_3.ravel())
+
+
 
 #Pandas
 
